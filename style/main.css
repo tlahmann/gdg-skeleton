@@ -3,8 +3,19 @@
   margin: -1px;
 } */
 
+/* GENERAL STUFF */
+img {
+  width: 100%;
+}
+
+.row{
+    margin-bottom: 5rem;
+}
+
+/* NAVIGATION */
+
 nav {
-  background-color: #333;
+  background-color: #3f4854;
   height: 20rem;
   margin-bottom: 1rem;
   position: relative;
@@ -39,4 +50,26 @@ nav {
 /* Change the link color to #111 (black) on hover */
 #nav-container ul li a:hover {
   background-color: #111;
+}
+
+/* CONTENT */
+
+#section1 {
+  text-decoration: underline;
+  text-decoration-color: #c56a4b;
+}
+
+#section2 {
+  text-decoration: underline;
+  text-decoration-color: #d4aa4a;
+}
+
+#section3 {
+  text-decoration: underline;
+  text-decoration-color: #c6d47b;
+}
+
+#section4 {
+  text-decoration: underline;
+  text-decoration-color: #fffd8c;
 }
