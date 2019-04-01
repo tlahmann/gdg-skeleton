@@ -5,7 +5,7 @@ let size
 
 function setup () {
     let b = select('#A_1_0');
-    size = {width: b.width - 2, height: 500};
+    size = {width: b.width, height: b.width * 3 / 4};
     var canvas = createCanvas(size.width, size.height);
     canvas.parent('A_1_0');
     noCursor();
@@ -24,4 +24,11 @@ function draw () {
     stroke(0, 0, 0);
     line(mouseX, mouseY - 10, mouseX, mouseY + 10);
     line(mouseX - 10, mouseY, mouseX + 10, mouseY);
+}
+
+// dynamically adjust the canvas to the window
+function windowResized () {
+    let b = select('#A_1_0');
+    size = {width: b.width, height: b.width * 3 / 4}
+    resizeCanvas(size.width, size.height);
 }

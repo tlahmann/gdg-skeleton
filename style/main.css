@@ -8,8 +8,12 @@ img {
   width: 100%;
 }
 
-.row{
-    margin-bottom: 5rem;
+.row {
+  margin-bottom: 5rem;
+}
+
+canvas {
+  vertical-align: top;
 }
 
 /* NAVIGATION */
