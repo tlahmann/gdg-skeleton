@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <title>Grundlagen der Gestaltung II, SoSe '19</title>
@@ -13,13 +13,49 @@
     <!-- Scripts -->
     <script src="./p5/p5.js"></script>
     <script src="./p5/addons/p5.dom.js"></script>
-    <script defer src="./assets/P_1_0_01.js"></script>
+    <script src="./p5/addons/p5.sound.min.js"></script>
+    <!-- <script defer src="./script/main.js"></script> -->
 </head>
 
 <body>
 
-    <nav>
+    <header>
         <div class="container" id="nav-container">
+            <h3>Grundlagen der Gestaltung II</h3>
+            Maximilian Mustermann, <a href="https://www.uni-ulm.de" target="_new">Universität Ulm</a>,
+            Sommersemester
+            2019
+            <hr>
+
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <div class="hamburger hamburger--elastic">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                    <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li><a href="#section4">Section 4</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
+    <!-- <nav>
+        <div class="container" id="nav-container">
+            <h3>Grundlagen der Gestaltung II</h3>
+            Maxmiliane Mustermann, <a href="https://www.uni-ulm.de" target="_new">Universität Ulm</a>, Sommersemester
+            2019
+            <hr>
             <ul>
                 <li><a href="#section1">Section 1</a></li>
                 <li><a href="#section2">Section 2</a></li>
@@ -28,15 +64,10 @@
             </ul>
         </div>
 
-    </nav>
+    </nav> -->
 
     <div class="container">
-
-        <div class="row">
-            <div class="twelve columns">
-                <h1 id="section1">Section 1</h1>
-            </div>
-        </div>
+        <h5>01 Einführung in p5.js</h5>
         <div class="row">
             <div class="eight columns">Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und
                 wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften
@@ -58,12 +89,9 @@
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
                 consequat massa quis enim.</div>
         </div>
+        <hr />
 
-        <div class="row">
-            <div class="twelve columns">
-                <h1 id="section2">Section 2</h1>
-            </div>
-        </div>
+        <h5 id="section2">02 Erste Skizzen</h5>
         <div class="row">
             <div class="eight columns">
                 <img src="./assets/skizze.png" />
@@ -74,12 +102,9 @@
                 vergessenheit gerät, damit auch künftige Generationen sich an der Schönheit dieser erfreuen und durch
                 sie einen angenehmeren Tag erhalten können.</div>
         </div>
+        <hr />
 
-        <div class="row">
-            <div class="twelve columns">
-                <h1 id="section3">Section 3</h1>
-            </div>
-        </div>
+        <h5 id="section3">03 Typografieübung</h5>
         <div class="row">
             <div class="eight columns">
                 <ul>
@@ -99,19 +124,33 @@
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
                 consequat massa quis enim.</div>
         </div>
+        <hr />
 
+        <h5 id="section4">04 Animationen</h5>
         <div class="row">
-            <div class="twelve columns">
-                <h1 id="section4">Section 4</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div id="A_1_0" class="eight columns">
-            </div>
+            <iframe src="./assets/a1/index.html" class="eight columns" width="500" height="300"></iframe>
             <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim.</div>
+                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+        </div>
+
+        <h5 id="section4">05 Animationen</h5>
+        <div class="row">
+            <iframe src="./assets/a2/index.html" class="eight columns" width="500" height="300"></iframe>
+            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+        </div>
+
+        <h5 id="section4">06 Animationen</h5>
+        <div class="row">
+            <iframe src="./assets/a3/index.html" class="eight columns" width="500" height="300"></iframe>
+            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
         </div>
     </div>
 
