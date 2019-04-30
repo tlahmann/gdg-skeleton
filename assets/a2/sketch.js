@@ -13,8 +13,8 @@
 
 // https://p5js.org/reference/#/p5/keyPressed
 
-
-// one names js object to hold values for the object to draw
+// one names json object to hold values for the object to draw
+// https://www.w3schools.com/js/js_json_objects.asp
 let drawObject = {
   angle: 0,
   size: 100
