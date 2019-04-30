@@ -2,6 +2,18 @@
 /// <reference path="../../p5/addons/p5.global-mode.d.ts" />
 'use strict'
 
+// https://p5js.org/reference/#/p5/strokeWeight
+// https://p5js.org/reference/#/p5/stroke
+// https://p5js.org/reference/#/p5/rectMode
+
+// https://p5js.org/reference/#/p5/push
+// https://p5js.org/reference/#/p5/pop
+// https://p5js.org/reference/#/p5/translate
+// https://p5js.org/reference/#/p5/rotate
+
+// https://p5js.org/reference/#/p5/keyPressed
+
+
 // one names js object to hold values for the object to draw
 let drawObject = {
   angle: 0,

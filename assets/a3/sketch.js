@@ -2,6 +2,13 @@
 /// <reference path="../../p5/addons/p5.global-mode.d.ts" />
 'use strict';
 
+// https://p5js.org/reference/#/p5/imageMode 
+// https://p5js.org/reference/#/p5/noStroke 
+// https://p5js.org/reference/#/p5/background 
+// https://p5js.org/reference/#/p5/image
+
+// https://en.wikipedia.org/wiki/Circle#Equations
+
 let currentShape;
 let shapes;
 
@@ -24,8 +31,10 @@ function draw () {
   // if we draw a background with alpha=50 the last few frames get drawn for a short amount of time
   background(color(255, 50));
   // math to calculate a circle
-  let posX = (width / 2) + cos(frameCount / 10) * 50;
-  let posY = (height / 2) + sin(frameCount / 10) * 50;
+  // x = a + r * cos t
+  // y = b + r * sin t
+  let posX = (width / 2) + 50 * cos(frameCount / 10);
+  let posY = (height / 2) + 50 * sin(frameCount / 10);
   push();
   translate(posX, posY);
   // draw an image 

@@ -2,6 +2,17 @@
 /// <reference path="../../p5/addons/p5.global-mode.d.ts" />
 'use strict'
 
+// https://p5js.org/reference/#/p5/clear
+// https://p5js.org/reference/#/p5/fill
+// https://p5js.org/reference/#/p5/color
+// https://p5js.org/reference/#/p5/rect
+// https://p5js.org/reference/#/p5/circle
+// https://p5js.org/reference/#/p5/triangle
+
+// https://p5js.org/reference/#/p5/beginShape
+// https://p5js.org/reference/#/p5/vertex
+// https://p5js.org/reference/#/p5/endShape
+
 function setup () {
     createCanvas(windowWidth, windowHeight);
 }
@@ -15,8 +26,8 @@ function draw () {
 
     // filling with alpha value needs a function call to `color(4)`
     fill(color(255, 0, 255, 128));
-    ellipse(300, 100, 50);
-    ellipse(310, 125, 50);
+    circle(300, 100, 50);
+    circle(310, 125, 50);
 
     // `color(2)` results in a grey value with alpha
     fill(color(0, 128));
