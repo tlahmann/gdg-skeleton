@@ -2,56 +2,56 @@
 /// <reference path="../../p5/addons/p5.global-mode.d.ts" />
 'use strict'
 
-let size;
-var maxCount = 5000; // max count of the circles
-var currentCount = 1;
-var x = [];
-var y = [];
-var r = [];
+// one names js object to hold values for the object to draw
+let drawObject = {
+  angle: 0,
+  size: 100
+};
 
 function setup () {
   createCanvas(windowWidth, windowHeight);
-  strokeWeight(0.5);
+  // set stroke weight globally
+  strokeWeight(3);
+  // set stroke color globally
+  stroke(59, 134, 134);
+  // set fill color globally
+  fill(121, 189, 154);
 
-  // first circle
-  x[0] = windowWidth / 2;
-  y[0] = windowHeight / 2;
-  r[0] = 10;
+  rectMode(CENTER);
 }
 
 function draw () {
+  // Clear the canvas
   clear();
 
-  // create a random set of parameters
-  var newR = random(1, 7);
-  var newX = random(newR, windowWidth - newR);
-  var newY = random(newR, windowHeight - newR);
-
-  var closestDist = Number.MAX_VALUE;
-  var closestIndex = 0;
-  // which circle is the closest?
-  for (var i = 0; i < currentCount; i++) {
-    var newDist = dist(newX, newY, x[i], y[i]);
-    if (newDist < closestDist) {
-      closestDist = newDist;
-      closestIndex = i;
-    }
-  }
-
-  // aline it to the closest circle outline
-  var angle = atan2(newY - y[closestIndex], newX - x[closestIndex]);
-
-  x[currentCount] = x[closestIndex] + cos(angle) * (r[closestIndex] + newR);
-  y[currentCount] = y[closestIndex] + sin(angle) * (r[closestIndex] + newR);
-  r[currentCount] = newR;
-  currentCount++;
-
-  // draw them
-  for (var i = 0; i < currentCount; i++) {
-    fill(50);
-    ellipse(x[i], y[i], r[i] * 2, r[i] * 2);
-  }
-
-  if (currentCount >= maxCount) noLoop();
+  // push the canvas aside
+  push();
+  // move the center point to W/2, H/2
+  translate(width / 2, height / 2);
+  // rotate according to the angle stored for the object to draw
+  rotate(drawObject.angle * (PI / 180));
+  // draw a rectangle
+  rect(0, 0, drawObject.size, drawObject.size);
+  // get the previously pushed contents back on screen
+  pop();
 }
 
+function keyPressed () {
+  // not using arrow keys because if will interfere with the used iFrames
+  switch (key.toLowerCase()) {
+    case 'w': // wambo
+      drawObject.size += 5; break;
+    case 'm': // mini
+      drawObject.size = max(drawObject.size - 5, 5); break;
+    case 'b': // turn clockwise
+      drawObject.angle += 5; break;
+    case 'v': // turn counterclockwise
+      drawObject.angle -= 5; break;
+    default: break;
+  }
+}
+
+// dynamically adjust the canvas size to the window size
+function windowResized () {
+  resizeCanvas(windowWidth, windowHeight);
+}
