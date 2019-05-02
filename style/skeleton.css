@@ -193,6 +193,22 @@ body {
   color: #777;
 }
 
+.smol-cnd {
+  font-family: "IBM Plex Sans Condensed", monospace;
+  font-size: 0.8em;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+.smol-mono {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8em;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 0px;
+}
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,
@@ -202,7 +218,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300;
 }
 h1 {
@@ -229,6 +245,7 @@ h5 {
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: -0.05rem;
+  margin-left: -2px;
 }
 h6 {
   font-size: 1.5rem;
@@ -407,7 +424,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside;
+  list-style: square;
 }
 ol {
   list-style: decimal inside;

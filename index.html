@@ -12,35 +12,38 @@
     <link type="text/css" href="style/skeleton.css" rel="stylesheet" />
     <link type="text/css" href="style/main.css" rel="stylesheet" />
 
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed"
+        rel="stylesheet">
+
     <!-- Scripts -->
     <script src="./p5/p5.js"></script>
     <script src="./p5/addons/p5.dom.js"></script>
     <script src="./p5/addons/p5.sound.min.js"></script>
-    <!-- <script defer src="./script/main.js"></script> -->
 </head>
 
 <body>
 
     <header class="header">
         <div class="container" id="nav-container">
-            <h4>Grundlagen der Gestaltung II</h4>
-            <h6>Maxmiliane Mustermann, <a href="https://www.uni-ulm.de" target="_new">Universität Ulm</a>, Sommersemester
-            2019</h6>
+            <h5>Grundlagen der Gestaltung II</h5>
+            <h6>Maxi Mustermann, <a href="https://www.uni-ulm.de" target="_new">Universität Ulm</a>, SoSe 2019</h6>
             <hr>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section1">[1] Entwurfsmethoden</a></li>
+                <li><a href="#section2">[2] Datengrafiken</a></li>
+                <li><a href="#section3">[3] Typografieübung</a></li>
+                <li><a href="#section4">[4] Zeichnen</a></li>
+                <li><a href="#section5">[5] Modifikation</a></li>
+                <li><a href="#section6">[6] Animation</a></li>
             </ul>
         </div>
 
     </header>
 
     <div id="main-container" class="container">
-        <h5>01 Einführung in p5.js</h5>
+        <h5>[1] Entwurfsmethoden</h5>
         <div class="row">
             <div class="eight columns">Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und
                 wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften
@@ -50,82 +53,102 @@
                 um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast jede Schrift gut
                 aus. Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach
                 TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur Pflicht werden. Nichteinhaltung wird mit bis
-                zu 245 € oder 368 $ bestraft. Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren
+                zu 245 € oder 368 $ bestraft. <br><br>Genauso wichtig in sind mittlerweile auch Âçcèñtë, die in neueren
                 Schriften aber fast immer enthalten sind. Ein wichtiges aber schwierig zu integrierendes Feld sind
                 OpenType-Funktionalitäten. Je nach Software und Voreinstellungen können eingebaute Kapitälchen, Kerning
                 oder Ligaturen (sehr pfiffig) nicht richtig dargestellt werden.Dies ist ein Typoblindtext. An ihm kann
                 man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie
                 Hamburgefonts, Rafgenduks</div>
 
-            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim.</div>
+            <div class="three columns offset-by-one">
+                <div class="smol-cnd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim.</div>
+            </div>
         </div>
         <hr />
 
-        <h5 id="section2">02 Erste Skizzen</h5>
+        <h5 id="section2">[2] Datengrafiken</h5>
         <div class="row">
             <div class="eight columns">
                 <img src="./assets/skizze.png" />
             </div>
-            <div class="three columns offset-by-one">Diese Skizze ist so schön, die muss hier bleiben, weil sie einfach
-                so schön ist und darum darf sie hier auch nicht entfernt werden, damit ihre Schönheit nicht verloren
-                geht und die Schönheit dieser Skizze an dieser Stelle der Seite erhalten bleibt und niemals in
-                vergessenheit gerät, damit auch künftige Generationen sich an der Schönheit dieser erfreuen und durch
-                sie einen angenehmeren Tag erhalten können.</div>
+            <div class="three columns offset-by-one">
+                <div class="smol-mono">Diese Skizze ist so schön, die muss hier bleiben, weil sie einfach
+                    so schön ist und darum darf sie hier auch nicht entfernt werden, damit ihre Schönheit nicht verloren
+                    geht und die Schönheit dieser Skizze an dieser Stelle der Seite erhalten bleibt und niemals in
+                    vergessenheit gerät.</div>
+            </div>
         </div>
         <hr />
 
-        <h5 id="section3">03 Typografieübung</h5>
+        <h5 id="section3">[3] Typografieübung</h5>
         <div class="row">
             <div class="eight columns">
+                <br>
                 <ul>
-                    <li>Item 1</li>
+                    <li>Webseiten-Navigation</li>
                     <li>
-                        Item 2
+                        Research
                         <ul>
-                            <li>Item 2.1</li>
-                            <li>Item 2.2</li>
+                            <li>Assets</li>
+                            <li>Scripts</li>
                         </ul>
                     </li>
-                    <li>Item 3</li>
+                    <li>Prototyp</li>
+                    <br>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                        felis, ultricies nec, pellentesque eu. Lorem Ipsum hasta la vista, baby! Aenean massa. Cum
+                        sociis natoque penatibus et magnis dis parturient montes.</p>
                 </ul>
             </div>
-            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim.</div>
+            <div class="three columns offset-by-one">
+                <div class="smol-cnd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim.</div>
+            </div>
         </div>
         <hr />
 
-        <h5 id="section4">04 Zeichnen</h5>
+        <h5 id="section4">[4] Zeichnen</h5>
         <div class="row">
             <iframe src="./assets/a1/index.html" class="eight columns" width="500" height="300"></iframe>
-            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+            <div class="three columns offset-by-one">
+                <div class="smol-mono">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus.<a href="#section1">Section 1</a> sehen kann</div>
+            </div>
         </div>
 
-        <h5 id="section4">05 Modifikation</h5>
+        <h5 id="section4">[5] Modifikation</h5>
         <div class="row">
             <iframe src="./assets/a2/index.html" class="eight columns" width="500" height="300"></iframe>
-            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+            <div class="three columns offset-by-one">
+                <div class="smol-cnd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+            </div>
         </div>
-
-        <h5 id="section4">06 Animation</h5>
+        <hr />
+        <h5 id="section4">[6] Animation</h5>
         <div class="row">
-            <iframe src="./assets/a3/index.html" class="eight columns" width="500" height="300"></iframe>
-            <div class="three columns offset-by-one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                consequat massa quis enim. wie man in <a href="#section1">Section 1</a> sehen kann</div>
+            <a href="./assets/a3/index.html" class="open-new eight columns" target="_new"></a>
+            <div class="three columns offset-by-one">
+                <div class="smol-mono">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    Nulla
+                    consequat massa quis enim, wie man in <a href="#section1">Section 1</a> sehen kann</div>
+            </div>
         </div>
     </div>
+    <hr />
 
 </body>
 

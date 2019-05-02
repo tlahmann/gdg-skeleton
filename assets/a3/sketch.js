@@ -33,8 +33,12 @@ function draw () {
   // math to calculate a circle
   // x = a + r * cos t
   // y = b + r * sin t
-  let posX = (width / 2) + 50 * cos(frameCount / 10);
-  let posY = (height / 2) + 50 * sin(frameCount / 10);
+  let a = (width / 2);
+  let b = (height / 2);
+  let r = (width / 4);
+  let t = frameCount / 10;
+  let posX = a + r * cos(t);
+  let posY = b + r * sin(t);
   push();
   translate(posX, posY);
   // draw an image 
