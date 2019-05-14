@@ -66,6 +66,30 @@ header {
   z-index: 3;
 }
 
+header hr {
+  margin-top: 1rem;
+}
+
+.header #title,
+.header #subtitle {
+  transition: all 0.2s ease-in-out;
+}
+
+.header #title.scroll,
+.header #subtitle.scroll {
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.header #title.scroll {
+  font-size: 1.8rem;
+}
+.header #subtitle.scroll {
+  font-size: 1.2rem;
+  float: right;
+  margin-top: 0.6rem;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -94,7 +118,8 @@ header {
 }
 
 #nav-container ul li {
-  float: left;
+  /* float: left; */
+  display: inline-block;
   margin: 0;
   color: #777;
 }
@@ -115,6 +140,9 @@ header {
 }
 
 .header .menu {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
@@ -208,6 +236,12 @@ header {
   .header .menu li a {
     text-align: unset !important;
     padding-left: 20px !important;
+  }
+  .header #title.scroll,
+  .header #subtitle.scroll {
+    display: block;
+    float: unset;
+    margin-top: inherit;
   }
 }
 /* CONTENT */
