@@ -103,7 +103,7 @@ header hr {
 }
 
 .header li {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: all 0.2s ease-in-out;
 }
 
@@ -117,7 +117,7 @@ header hr {
 }
 
 .header.scroll li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .header.scroll li a {
     padding: 5px 10px 5px 0px;
@@ -161,6 +161,13 @@ header hr {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
 }
 
 /* menu icon */
@@ -234,9 +241,10 @@ header hr {
 }
 
 footer {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 3em !important;
 }
+
 @media (min-width: 550px) {
     .header .menu {
         clear: none;
