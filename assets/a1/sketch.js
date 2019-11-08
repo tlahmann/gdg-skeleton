@@ -21,11 +21,11 @@ function draw () {
     clear();
 
     // filling as RGB value
-    fill(55, 200, 0);
+    fill(130, 200, 0);
     rect(100, 100, 50, 50);
 
     // filling with alpha value needs a function call to `color(4)`
-    fill(color(255, 0, 255, 128));
+    fill(color(250, 0, 30, 128));
     circle(300, 100, 50);
     circle(310, 125, 50);
 
